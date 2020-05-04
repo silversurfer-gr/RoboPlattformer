@@ -1,0 +1,249 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Tileset/tiles1.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 22, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 15 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 32, 11 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 32, 21 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 32, 11 )
+
+[node name="TileSet" type="Node2D"]
+
+[node name="Wall1" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1/StaticBody2D"]
+position = Vector2( -9.94285, 0 )
+shape = SubResource( 1 )
+
+[node name="Wall2" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 96, 32 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/StaticBody2D"]
+position = Vector2( -9.94285, 0 )
+shape = SubResource( 1 )
+
+[node name="Wall3" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 160, 32 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall3/StaticBody2D"]
+position = Vector2( -9.94285, 0 )
+shape = SubResource( 1 )
+
+[node name="Wall4" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 225, 32 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall4/StaticBody2D"]
+position = Vector2( -9.94285, 0 )
+shape = SubResource( 1 )
+
+[node name="Wall5" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 288, 32 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall5/StaticBody2D"]
+position = Vector2( 9.99999, 0 )
+shape = SubResource( 1 )
+
+[node name="Wall6" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 352, 32 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 5
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall6/StaticBody2D"]
+position = Vector2( 9.99999, 0 )
+shape = SubResource( 1 )
+
+[node name="Wall7" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 415, 32 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 6
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall7/StaticBody2D"]
+position = Vector2( 9.99999, 0 )
+shape = SubResource( 1 )
+
+[node name="Wall8" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 480.234, 33.629 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall8/StaticBody2D"]
+position = Vector2( 9.99999, 0 )
+shape = SubResource( 1 )
+
+[node name="Spike1" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 32, 96 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 10
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Spike1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spike1/StaticBody2D"]
+position = Vector2( 0, 17 )
+shape = SubResource( 2 )
+
+[node name="Spike2" type="Sprite" parent="."]
+position = Vector2( 96, 96 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 11
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Spike2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spike2/StaticBody2D"]
+position = Vector2( 0, 21 )
+shape = SubResource( 3 )
+
+[node name="Spike3" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 161, 96 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 12
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Spike3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spike3/StaticBody2D"]
+position = Vector2( 0, 11 )
+shape = SubResource( 4 )
+
+[node name="Floor1" type="Sprite" parent="."]
+position = Vector2( 32, 160.168 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 20
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor1/StaticBody2D"]
+position = Vector2( -32, -160.168 )
+polygon = PoolVector2Array( 0, 128, 44, 128, 44, 170, 64, 170, 64, 192, 0, 192.136 )
+
+[node name="Floor2" type="Sprite" parent="."]
+position = Vector2( 96, 160.526 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 21
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/StaticBody2D"]
+position = Vector2( 0, 21 )
+shape = SubResource( 5 )
+
+[node name="Floor3" type="Sprite" parent="."]
+position = Vector2( 160, 160 )
+texture = ExtResource( 1 )
+vframes = 10
+hframes = 10
+frame = 22
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor3"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor3/StaticBody2D"]
+polygon = PoolVector2Array( -10, -32, 32, -32, 32, 32, -32, 32, -32, 10, -10, 10 )
